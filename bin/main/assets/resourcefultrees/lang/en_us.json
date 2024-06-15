@@ -1,0 +1,25 @@
+{
+    "block.resourcefultrees.coal_sapling": "Coal Sapling",
+    "block.resourcefultrees.copper_sapling": "Copper Sapling",
+    "block.resourcefultrees.diamond_sapling": "Diamond Sapling",
+    "block.resourcefultrees.emerald_sapling": "Emerald Sapling",
+    "block.resourcefultrees.gold_sapling": "Gold Sapling",
+    "block.resourcefultrees.iron_sapling": "Iron Sapling",
+    "block.resourcefultrees.lapislazuli_sapling": "Lapislazuli Sapling",
+    "block.resourcefultrees.netherite_scrap_sapling": "Netherite Scrap Sapling",
+    "block.resourcefultrees.redstone_sapling": "Redstone Sapling",
+    "block.resourcefultrees.quartz_sapling": "Quartz Sapling",
+
+    "block.resourcefultrees.coal_leaves": "Coal Leaves",
+    "block.resourcefultrees.copper_leaves": "Copper Leaves",
+    "block.resourcefultrees.diamond_leaves": "Diamond Leaves",
+    "block.resourcefultrees.emerald_leaves": "Emerald Leaves",
+    "block.resourcefultrees.gold_leaves": "Gold Leaves",
+    "block.resourcefultrees.iron_leaves": "Iron Leaves",
+    "block.resourcefultrees.lapislazuli_leaves": "Lapislazuli Leaves",
+    "block.resourcefultrees.netherite_scrap_leaves": "Netherite Scrap Leaves",
+    "block.resourcefultrees.redstone_leaves": "Redstone Leaves",
+    "block.resourcefultrees.quartz_leaves": "Quartz Leaves",
+
+    "itemgroup.resourceful_trees": "Resourceful Trees"
+}
