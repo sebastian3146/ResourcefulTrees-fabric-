@@ -3,7 +3,7 @@
 	"id": "resourcefultrees",
 	"version": "${version}",
 	"name": "Resourceful Trees",
-	"description": "Resources that are growing on trees",
+	"description": "Resources, that grow on trees",
 	"authors": [
 		"Sebastian3146"
 	],
