@@ -1,4 +1,4 @@
-package com.sebastian3146.resourcefultrees.block.custom;
+/* package com.sebastian3146.resourcefultrees.block.custom;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -78,3 +78,4 @@ public class GemPolishingStationBlock extends BlockWithEntity implements BlockEn
 
 
 }
+*/

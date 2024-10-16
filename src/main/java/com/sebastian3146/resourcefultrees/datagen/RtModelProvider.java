@@ -44,7 +44,7 @@ public class RtModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(RtBlocks.QUARZ_LEAVE);
         blockStateModelGenerator.registerTintableCross(RtBlocks.QUARZ_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
-        blockStateModelGenerator.registerSimpleState(RtBlocks.GEM_POLISHING_STATION);
+        //blockStateModelGenerator.registerSimpleState(RtBlocks.GEM_POLISHING_STATION);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.sebastian3146.resourcefultrees.block.entity;
+/* package com.sebastian3146.resourcefultrees.block.entity;
 
 import com.sebastian3146.resourcefultrees.ResourcefulTrees;
 import com.sebastian3146.resourcefultrees.block.RtBlocks;
@@ -19,3 +19,4 @@ public class RtBlockEntities {
         ResourcefulTrees.LOGGER.info("Registering Block Entities for " + ResourcefulTrees.MOD_ID);
     }
 }
+*/

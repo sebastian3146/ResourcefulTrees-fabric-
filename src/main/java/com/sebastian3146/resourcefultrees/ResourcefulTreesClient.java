@@ -1,8 +1,6 @@
 package com.sebastian3146.resourcefultrees;
 
 import com.sebastian3146.resourcefultrees.block.RtBlocks;
-import com.sebastian3146.resourcefultrees.screen.GemPolishingScreen;
-import com.sebastian3146.resourcefultrees.screen.RtScreenHandler;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
@@ -42,6 +40,5 @@ public class ResourcefulTreesClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(RtBlocks.QUARZ_SAPLING, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(RtBlocks.QUARZ_LEAVE, RenderLayer.getCutout());
 
-        HandledScreens.register(RtScreenHandler.GEM_POLISHING_HANDLER, GemPolishingScreen::new);
     }
 }

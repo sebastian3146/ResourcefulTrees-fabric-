@@ -1,4 +1,4 @@
-package com.sebastian3146.resourcefultrees.block.entity;
+/*package com.sebastian3146.resourcefultrees.block.entity;
 
 import com.sebastian3146.resourcefultrees.recipe.GemPolishingRecipe;
 import com.sebastian3146.resourcefultrees.screen.GemPolishingScreenHandler;
@@ -170,3 +170,4 @@ public class GemPolishingStationBlockEntity extends BlockEntity implements Exten
     }
     
 }
+*/

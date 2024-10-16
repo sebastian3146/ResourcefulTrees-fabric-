@@ -1,4 +1,4 @@
-package com.sebastian3146.resourcefultrees.recipe;
+/* package com.sebastian3146.resourcefultrees.recipe;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
@@ -113,3 +113,4 @@ public class GemPolishingRecipe implements Recipe<SimpleInventory> {
         }
     }
 }
+*/

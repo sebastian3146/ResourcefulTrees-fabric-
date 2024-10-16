@@ -1,4 +1,4 @@
-package com.sebastian3146.resourcefultrees.screen;
+/* package com.sebastian3146.resourcefultrees.screen;
 
 import com.sebastian3146.resourcefultrees.block.entity.GemPolishingStationBlockEntity;
 
@@ -96,3 +96,4 @@ public class GemPolishingScreenHandler extends ScreenHandler {
     }
 
 }
+*/

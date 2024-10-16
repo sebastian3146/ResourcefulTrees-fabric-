@@ -10,10 +10,13 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
+import net.minecraft.registry.RegistryWrapper;
+
+import java.util.concurrent.CompletableFuture;
 
 public class RtRecipeProvider extends FabricRecipeProvider {
-    public RtRecipeProvider(FabricDataOutput output) {
-        super(output);
+    public RtRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+        super(output, registriesFuture);
     }
 
     @Override
@@ -39,6 +42,6 @@ public class RtRecipeProvider extends FabricRecipeProvider {
             .input('S', inputSapling)
             .criterion(hasItem(inputSapling), conditionsFromItem(inputSapling))
             .criterion(hasItem(inputResource), conditionsFromItem(inputResource))
-            .offerTo(exporter, new Identifier(getRecipeName(outputSapling)));
+            .offerTo(exporter, Identifier.of(getRecipeName(outputSapling)));
     }
 }

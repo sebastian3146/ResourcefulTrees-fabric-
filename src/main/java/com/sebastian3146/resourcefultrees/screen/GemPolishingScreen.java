@@ -1,4 +1,4 @@
-package com.sebastian3146.resourcefultrees.screen;
+/* package com.sebastian3146.resourcefultrees.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.sebastian3146.resourcefultrees.ResourcefulTrees;
@@ -53,3 +53,4 @@ public class GemPolishingScreen extends HandledScreen<GemPolishingScreenHandler>
     }
     
 }
+*/

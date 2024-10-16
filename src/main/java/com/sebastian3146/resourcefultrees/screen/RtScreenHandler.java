@@ -1,4 +1,4 @@
-package com.sebastian3146.resourcefultrees.screen;
+/* package com.sebastian3146.resourcefultrees.screen;
 
 import com.sebastian3146.resourcefultrees.ResourcefulTrees;
 
@@ -17,3 +17,4 @@ public class RtScreenHandler {
         ResourcefulTrees.LOGGER.info("Registering Screen Handlers for" + ResourcefulTrees.MOD_ID);
     }
 }
+*/

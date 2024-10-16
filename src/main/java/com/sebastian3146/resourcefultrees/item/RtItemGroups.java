@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class RtItemGroups {
     public static final ItemGroup RESOURCE_TREES_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(ResourcefulTrees.MOD_ID, "resourceful_trees"),
+            Identifier.of(ResourcefulTrees.MOD_ID, "resourceful_trees"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.resourceful_trees"))
                     .icon(() -> new ItemStack(RtBlocks.COAL_SAPLING)).entries((displayContext, entries) -> {
                         //SAPLINGS

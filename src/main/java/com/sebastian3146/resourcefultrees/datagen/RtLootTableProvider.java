@@ -13,12 +13,16 @@ import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.TableBonusLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
-import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.registry.RegistryKeys;
+
+import java.util.concurrent.CompletableFuture;
 
 public class RtLootTableProvider extends FabricBlockLootTableProvider {
-    public RtLootTableProvider(FabricDataOutput dataOutput) {
-        super(dataOutput);
+    public RtLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
+        super(dataOutput, registryLookup);
     }
 
     @Override
@@ -54,14 +58,18 @@ public class RtLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(RtBlocks.QUARZ_LEAVE, resourceLeavesDrops(RtBlocks.QUARZ_LEAVE, RtBlocks.QUARZ_SAPLING, Items.QUARTZ, 0.1f));
     }
 
-    // From the method oakLeavesDrops
-    public LootTable.Builder resourceLeavesDrops(Block leaves, Block dropSapling, Item dropResource, float ... chance) {
-        return this.leavesDrops(leaves, dropSapling, chance)
-            .pool(LootPool.builder().rolls(ConstantLootNumberProvider.create(1.0f))
-            .conditionally(WITHOUT_SILK_TOUCH_NOR_SHEARS)
-            .with((LootPoolEntry.Builder<?>)
-                ((LeafEntry.Builder<?>)this.addSurvivesExplosionCondition(leaves, 
-                    ItemEntry.builder(dropResource)))
-                        .conditionally(TableBonusLootCondition.builder(Enchantments.FORTUNE, chance))));
+    // From the method oakLeavesDrops in the class BlockLootTableGenerator
+    public LootTable.Builder resourceLeavesDrops(Block leaves, Block sapling, Item dropResource, float... saplingChance) {
+        RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
+        return this.leavesDrops(leaves, sapling, saplingChance)
+            .pool(
+                LootPool.builder()
+                    .rolls(ConstantLootNumberProvider.create(1.0F))
+                    .conditionally(this.createWithoutShearsOrSilkTouchCondition())
+                    .with(
+                        ((LeafEntry.Builder)this.addSurvivesExplosionCondition(leaves, ItemEntry.builder(dropResource)))
+                            .conditionally(TableBonusLootCondition.builder(impl.getOrThrow(Enchantments.FORTUNE), 0.005F, 0.0055555557F, 0.00625F, 0.008333334F, 0.025F))
+                    )
+            );
     }
 }

@@ -15,7 +15,7 @@ public class RtPlacedFeatures {
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
-        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(ResourcefulTrees.MOD_ID, name));
+        return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(ResourcefulTrees.MOD_ID, name));
     }
 
     /*
