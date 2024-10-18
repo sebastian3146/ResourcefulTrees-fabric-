@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:ancient_debris"
+    },
+    "S": {
+      "item": "minecraft:oak_sapling"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BSB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "resourcefultrees:netherite_scrap_sapling"
+  }
+}
